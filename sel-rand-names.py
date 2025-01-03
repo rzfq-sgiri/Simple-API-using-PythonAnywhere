@@ -5,7 +5,7 @@ import requests
 API_URL = "https://riszaf601.pythonanywhere.com/random-names"
 
 
-st.title("Choose 5 Names Randomly")
+st.title("Simple API that can choose 5 Names Randomly")
 
 # Input senarai nama
 st.write("Insert names, use comma to separate")
