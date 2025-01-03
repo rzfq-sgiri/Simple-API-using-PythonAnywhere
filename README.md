@@ -26,8 +26,8 @@ app = Flask(__name__)
 def random_names():
     data = request.json
     names = data.get("names", [])
-    if not names or len(names) < 10:
-        return jsonify({"error": "Senarai nama mestilah sekurang-kurangnya 10"}), 400
+    if not names or len(names) < 5:
+        return jsonify({"error": "Senarai nama mestilah sekurang-kurangnya 5"}), 400
 
     selected_names = random.sample(names, 5)
     return jsonify({"selected_names": selected_names})
