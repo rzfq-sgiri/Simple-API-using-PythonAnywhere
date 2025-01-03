@@ -35,3 +35,6 @@ def random_names():
 if __name__ == "__main__":
     app.run()
 ```
+
+## Demo URL
+[Link to Simple API](https://simple-api-using-pythonanywhere-xaj2hcge4thvgjzk3xuvwa.streamlit.app/)
