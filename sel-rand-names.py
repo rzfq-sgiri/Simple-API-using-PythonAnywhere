@@ -19,7 +19,7 @@ if st.button("Choose Random"):
         # Proses senarai nama
         names_list = [name.strip() for name in names_input.split(",") if name.strip()]
         
-        if len(names_list) < 10:
+        if len(names_list) < 5:
             st.error("Please make sure you have inserted more than 5 names.")
         else:
             # Hantar data ke API
