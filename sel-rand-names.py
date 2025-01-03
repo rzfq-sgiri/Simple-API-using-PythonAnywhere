@@ -5,7 +5,7 @@ import requests
 API_URL = "https://riszaf601.pythonanywhere.com/random-names"
 
 
-st.title("Choose 10 Names Randomly")
+st.title("Choose 5 Names Randomly")
 
 # Input senarai nama
 st.write("Insert names, use comma to separate")
@@ -20,7 +20,7 @@ if st.button("Choose Random"):
         names_list = [name.strip() for name in names_input.split(",") if name.strip()]
         
         if len(names_list) < 10:
-            st.error("Sila pastikan senarai nama mempunyai sekurang-kurangnya 10 nama.")
+            st.error("Please make sure you have inserted more than 5 names.")
         else:
             # Hantar data ke API
             try:
@@ -28,11 +28,11 @@ if st.button("Choose Random"):
                 if response.status_code == 200:
                     # Papar hasil
                     selected_names = response.json().get("selected_names", [])
-                    st.success("Here are 10 random selected names:")
+                    st.success("Here are 5 random selected names:")
                     for idx, name in enumerate(selected_names, 1):
                         st.write(f"{idx}. {name}")
                 else:
-                    st.error(response.json().get("error", "Masalah berlaku dengan API."))
+                    st.error(response.json().get("error", "Problem with API."))
             except requests.exceptions.RequestException as e:
                 st.error(f"Tidak dapat menghubungi API: {e}")
 
