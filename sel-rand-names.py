@@ -1,6 +1,8 @@
 import streamlit as st
 import requests
 
+#this code request 5 randoms names from the API server 
+
 # URL API PythonAnywhere
 API_URL = "https://riszaf601.pythonanywhere.com/random-names"
 
