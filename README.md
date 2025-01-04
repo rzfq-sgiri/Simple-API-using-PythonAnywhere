@@ -17,7 +17,10 @@ if path not in sys.path:
 from app import app as application
 ```
 
-## App.py in PythonAnywhere
+## `App.py` in PythonAnywhere
+
+This is `app.py` source code file. Should be deploy at API server.
+
 ```python
 from flask import Flask, request, jsonify
 import random
