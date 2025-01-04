@@ -41,6 +41,14 @@ if __name__ == "__main__":
     app.run()
 ```
 
+## File Structure
+
+This is the example of file structure in PythonAnywhere:
+```plaintext
+/home/riszaf601/random-names/
+├── app.py
+```
+
 ## Demo URL
 [Link to Simple API](https://simple-api-using-pythonanywhere-xaj2hcge4thvgjzk3xuvwa.streamlit.app/)
 
