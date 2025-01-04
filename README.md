@@ -1,9 +1,11 @@
 # Simple API
 - This is a simple API using [PythonAnywhere.com](https://www.pythonanywhere.com/) platform
-- This API will select 5 random names from the list given
+- This API will select 5 random names from the list given. The lists of names will be sent by POST method from the local server.
+- You will need 2 differents server for this. 1 local server and 1 API server.
+- Deploy `sel-rand-names.py` at local server, and the following configuration at PythonAnywhere.com
 - A node can use the API to send a list of names and retrieve 5 random names as the output. See demo.
 
-## WSGI Configuration
+## WSGI Configuration in PythonAnywhere
 ```python
 import sys
 
